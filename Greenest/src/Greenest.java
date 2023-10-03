@@ -5,7 +5,6 @@ public class Greenest {
         InputOutput.InputHanterare(vr);
     }
     public static void main(String[] args) {
-
         Greenest gr = new Greenest();
     }
 }
