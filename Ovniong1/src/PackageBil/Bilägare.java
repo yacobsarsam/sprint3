@@ -6,7 +6,8 @@ import java.util.ArrayList;
 
 public class Bilägare extends Person {
 private ArrayList<Bil> bilar= new ArrayList<>();
-    public Bilägare(String namn, String adress, int ålder) {
+    public Bilägare(String namn, String adress, int ålder)
+    {
         super(namn, adress, ålder);
     }
     /*public static void BytabilÄgare(Bil bil1, Bilägare p1, Bilägare p2) {
@@ -40,14 +41,14 @@ private ArrayList<Bil> bilar= new ArrayList<>();
         return s;
     }
 
-    public ArrayList<Bil> getBilar() {
+    /*public ArrayList<Bil> getBilar() {
 
         return bilar;
-    }
+    }*/
 
-    public void setBilar(ArrayList<Bil> bilar) {
+    /*public void setBilar(ArrayList<Bil> bilar) {
         this.bilar = bilar;
-    }
+    }*/
 
 }
 

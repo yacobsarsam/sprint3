@@ -1,6 +1,8 @@
 import PackageBil.Bil;
 import PackageBil.Bilägare;
 
+
+
 public class Main {
 
     public Main() {
@@ -21,6 +23,8 @@ public class Main {
 
 
         System.out.println(p2.getNamn() + " äger" + p2.getBilarReg());
+Romersksiffra rs =  Romersksiffra.A;
+System.out.println(rs);
     }
     public static void main(String[] args) {
         Main m1 =new Main();
