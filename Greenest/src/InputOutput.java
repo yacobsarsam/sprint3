@@ -6,6 +6,14 @@ public class InputOutput {
             String inputData;
             try {
                 inputData = JOptionPane.showInputDialog(null, "Vilken växt ska få vätska?");
+                System.out.println(inputData);
+                if (inputData == null) {
+                    System.exit(0);
+                }
+                if (inputData.isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Obs! Ingen Input");
+                    continue;
+                }
                 if (!vr.VäxtFinns(inputData)) {
                     JOptionPane.showMessageDialog(null, "Växten finns inte registerad i hotellet");
                 } else {
