@@ -6,6 +6,7 @@ public class Växter {
         this.längd = längd;
         this.växtNamn = växtNamn;
     }
+    public double BeräknaVätska() {  return 0;  }
     void PrintaUt() {
         JOptionPane.showMessageDialog(null,
                 "Alla växter behöver vätska!");
