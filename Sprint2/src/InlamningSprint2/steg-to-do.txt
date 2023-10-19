@@ -1,0 +1,7 @@
+1 läsa personer från fil
+2- lägg till i arraylist
+3 read personnummer eller namn
+check if input is korrekt
+4-kolla om person finns i listan
+om Ja --> skriv den i ny fil som aktiv tränare
+
