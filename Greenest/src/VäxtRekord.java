@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class VäxtRekord {
-    public ArrayList<Växter> allaVäxter = new ArrayList<>();
+    private ArrayList<Växter> allaVäxter = new ArrayList<>();
 
     //skapar växter och lägger till de i ArrayList
     void SkapaVäxter() {
