@@ -2,7 +2,6 @@ package InlamningSprint2;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
 public class Gym {
     //public void DoProgram(){}
     public void DoProgram(Boolean isTest,String input, Path testInPath,Path testOutpath){

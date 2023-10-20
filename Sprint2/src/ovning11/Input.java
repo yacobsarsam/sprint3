@@ -3,13 +3,10 @@ package ovning11;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.Scanner;
-
 public class Input {
-
     public Input() {
         ReadInput();
     }
-
     void ReadInput() {
     }
 
@@ -35,7 +32,6 @@ public class Input {
         if (isTest) {
             return IsGetPlace(CalculateTidDurationIn(vidioBandLängdT, användDelBandT)
                     , CalculateDurationInMiuntes(LocalTime.parse(progTidStartT), LocalTime.parse(progTidSlutT)));
-
         } else {
             int vidioBandLängd, användDelBand; // i min
             String progTidStart, progTidSlut; //mm:ss

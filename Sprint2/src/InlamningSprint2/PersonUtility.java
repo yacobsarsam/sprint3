@@ -14,15 +14,15 @@ public class PersonUtility {
         Person p = new Person(pn, namn, memberDate);
         return p;
     }
-
     public boolean HasActiveMembership(Person person) {
       //  System.out.println("period is: " + Period.between(person.getMedlemskapDatum(),LocalDate.now()).getYears());
         if (Period.between(person.getMedlemskapDatum(),LocalDate.now()).getYears()<1)
             return true;
         else return false;
     }
+}
+
       /*public ArrayList<Person> AddPersonToList(Person person, ArrayList<Person> list) {
         list.add(person);
         return list;
     }*/
-}

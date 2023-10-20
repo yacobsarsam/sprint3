@@ -49,7 +49,6 @@ public class IOUtility {
     }
     public void ReadFromUser(Path outPath) {
         Scanner sc = new Scanner(System.in);
-        // String wrongMessage = "";
         String input;
         while (true) {
             System.out.println("Skriv personnummer (10 siffror) eller namn på tränare: ");

@@ -75,8 +75,9 @@ public class InlamningSprint2Test {
         assertTrue(countLinesInFile(writetPath) == antalAktivaMedlemer);
         assertFalse(countLinesInFile(writetPath) == antalAktivaMedlemer - 1);
 
+        //test om sista aktiva personen i listan(inputFile) skrivs in outputFilens sista rad.
         if (activePerson != null)
-            assertEquals(activePerson.getPeronnummer(), writeTestList.get(0).getPeronnummer());
+            assertEquals(ReadLastPersonFromOutpuFile(writetPath), activePerson.getPeronnummer());
     }
     String ReadLastPersonFromOutpuFile(Path writePath) {
         String personNumber = null;
