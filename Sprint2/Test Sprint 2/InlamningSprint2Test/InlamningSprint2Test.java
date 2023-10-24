@@ -40,13 +40,15 @@ public class InlamningSprint2Test {
     void ReadFromFileTest() {
         //assert(iou.ReadFromUser());
         Path testPath = Paths.get("src/InlamningSprint2/TestReadCustomers.txt");
-        //Throwable exception = assertThrows(Exception.class,() ->iou.ReadFromFileToList(path));
+
         ArrayList<Person> list = iou.ReadFromFileToList(testPath);
         assertEquals(list.size(), 3);
         assertEquals(list.get(0).getNamn(), "Yacoub Sarsam");
         assertEquals(list.get(1).getPeronnummer(), "9977551234");
         assertEquals(list.get(2).getNamn(), "Noor Munir");
     }
+    //assert(iou.ReadFromUser());
+    //Throwable exception = assertThrows(Exception.class,() ->iou.ReadFromFileToList(path));
 
     @Test
     void WriteToFileTest() {
@@ -55,11 +57,7 @@ public class InlamningSprint2Test {
         Person activePerson = null;
         Path readPath = Paths.get("src/InlamningSprint2/TestReadCustomers.txt");
         Path writetPath = Paths.get("src/InlamningSprint2/TestWriteCustomers.txt");
-        try (PrintWriter pr = new PrintWriter(Files.newBufferedWriter(writetPath)); Scanner scan = new Scanner(writetPath)) {
-            /*while (scan.hasNextLine()) {
-                scan.nextLine();
-                antalAktivaMedlemer++;
-            }*/
+        try (PrintWriter pr = new PrintWriter(Files.newBufferedWriter(writetPath))) {
             writeTestList = iou.ReadFromFileToList(readPath);
             for (int i = 0; i < writeTestList.size(); i++) {
                 Person pTest = writeTestList.get(i);
@@ -135,4 +133,5 @@ public class InlamningSprint2Test {
         assert (!iou.isTenDigits("a123456789"));
         assert (!iou.isTenDigits("123456789"));
     }*/
+    //; Scanner scan = new Scanner(writetPath)
 }
